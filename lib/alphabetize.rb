@@ -1,8 +1,9 @@
 def alphabetize(arr)
   # code here
+  esperanto = "abcĉdefgĝhĥijĵklmnoprsŝtuŭvz"
   arr.sort_by do |word|
     word.each_char do |ch|
-      "abcĉdefgĝhĥijĵklmnoprsŝtuŭvz".chars.index(ch)
+      .chars.index(ch)
     end
   end
 end
