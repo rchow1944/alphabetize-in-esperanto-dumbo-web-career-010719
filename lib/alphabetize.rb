@@ -1,7 +1,9 @@
 def alphabetize(arr)
   # code here
   sorted = arr.sort_by do |word|
-    "abcĉdefgĝhĥijĵklmnoprsŝtuŭvz".chars.index(word.chr)
+    word.each_char do |ch|
+      "abcĉdefgĝhĥijĵklmnoprsŝtuŭvz".chars.index(ch)
+    end
   end
   sorted
 end
