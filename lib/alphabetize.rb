@@ -3,7 +3,7 @@ def alphabetize(arr)
   esperanto = "abcĉdefgĝhĥijĵklmnoprsŝtuŭvz"
   arr.sort_by do |word|
     word.each_char do |ch|
-      esperanto.chars.index(ch)
+      puts esperanto.chars.index(ch)
     end
   end
 end
